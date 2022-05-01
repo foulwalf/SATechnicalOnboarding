@@ -227,7 +227,7 @@ nav a:hover span[class*="fa-"] {
 }
 
 #introduction p {
-    font-size: var(--small-size);
+    font-size: var(--normal-size);
 }
 
 #introduction p:first-child {
@@ -244,27 +244,31 @@ nav a:hover span[class*="fa-"] {
 #introduction h2 {
     font-size: var(--big-size);
 }
-
+#introduction a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+}
 /* projects section */
 
-#project {
+#projects {
     max-width: 1280px;
     margin: 0 auto;
     padding: var(--section-padding)
 }
 
-#project h2 {
+#projects h2 {
     font-size: var(--medium-size);
     margin-bottom: calc(2rem * 1.5);
 }
 
-#project h3 {
+#projects h3 {
     /*   font-size: var(--normal-size); */
     margin-bottom: calc(1.3rem * 1.5);
     color: var(--secondary);
 }
 
-#project h4 {
+#projects h4 {
     font-size: var(--small-size);
     font-family: var(--monospace);
     /*   margin-bottom: calc(2rem * 1.5); */
@@ -288,7 +292,7 @@ nav a:hover span[class*="fa-"] {
     color: var(--primary)
 }
 
-#project ul {
+#projects ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -299,7 +303,7 @@ nav a:hover span[class*="fa-"] {
     font-size: var(--small-size);
 }
 
-#project img {
+#projects img {
     margin: 2rem 0 4rem 0;
     padding: 1rem;
     border-top: 2px solid var(--primary);
@@ -308,7 +312,7 @@ nav a:hover span[class*="fa-"] {
 }
 
 @media(min-width: 550px) {
-    #project img {
+    #projects img {
         grid-column: 1/6;
         grid-row: 1/2;
     }
@@ -326,22 +330,22 @@ nav a:hover span[class*="fa-"] {
         text-align: right;
     }
 
-    #project ul {
+    #projects ul {
         justify-content: flex-end;
     }
 
-    #project .reverse .text {
+    #projects .reverse .text {
         grid-column: 1/7;
         order: 2;
         text-align: left;
     }
 
-    #project .reverse img {
+    #projects .reverse img {
         grid-column: 6/11;
         grid-row: 1/2;
     }
 
-    #project .reverse ul {
+    #projects .reverse ul {
         justify-content: flex-start;
     }
 }
